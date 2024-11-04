@@ -32,9 +32,8 @@
   flex-direction: column;
   color: white;
   border-radius: 5px;
-  overflow-y: auto; /* Enables scrolling when content overflows */
+  overflow-y: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* white-space: pre-wrap; */
 }
 
 .output {
@@ -46,12 +45,22 @@
   flex-direction: column;
   color: white;
   border-radius: 5px;
-  overflow-y: auto; /* Enables scrolling when content overflows */
+  overflow-y: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   white-space: pre-wrap;
 }
 
-.title {
+.titleOne {
+  width: 30vw;
+  height: 6vh;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.titleTwo {
   width: 30vw;
   height: 3.5vh;
   color: white;
@@ -69,12 +78,25 @@
   color: rgb(80, 80, 80);
   background-color: rgb(200, 200, 200);
   outline: none;
-  resize: none; /* Prevents resizing */
-  overflow-y: auto; /* Allows vertical scrolling if text overflows */
-  box-sizing: border-box; /* Ensures padding doesn’t affect overall size */
+  resize: none;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .enterButton {
+  width: 30%;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(63, 63, 63);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.copyButton {
   width: 30%;
   padding: 8px;
   font-size: 16px;
