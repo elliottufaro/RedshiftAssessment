@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Red-Shift Coding Assesment</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="row">
+        <div class="element">
+          <h2 class="title">Sample Log</h2>
+          <div class="box">
+            <!-- Whenever a person accesses a page it writes a line to the logs storing the user id, username
+(email), date & time (single field), and the id of the web page that they hit. -->
+            <p>U0001,billy@gmail.com,2020-11-01T13:15:33,P0001|
+              U0002,jane@gmail.com,2021-04-01T12:11:33,P0005|
+              U0003,nancy@gmail.com,2023-06-01T17:14:33,P0011|
+              U0003,nancy@gmail.com,2023-06-01T17:14:33,P0011|
+              U0003,nancy@gmail.com,2013-06-01T17:14:33,P0014|
+              U0001,billy@gmail.com,2001-11-01T13:15:33,P0017|
+              U0004,sam@outlook.com,2001-11-01T03:15:33,P0023|
+              U0005,billy@gmail.com,2020-11-01T05:15:33,P0001|
+              U0006,sarah@gmail.com,2021-04-01T06:11:33,P0005|
+              U0007,paul@aol.com,2023-06-01T07:07:33,P0011|
+              U0008,gene@outlook.com,2023-06-01T02:14:33,P0011|
+              U0009,abe@gmail.com,2013-06-01T03:14:33,P0012|
+              U0010,george@aol.com,2001-11-01T09:15:33,P0005|
+              U0011,glen@outlook.com,2001-11-01T13:15:33,P0003|
+              U0012,april@outlook.com,2023-06-01T02:14:33,P0031|
+              U0013,adam@gmail.com,2013-06-01T03:14:33,P0026|
+              U0014,anne@aol.com,2001-11-01T09:15:33,P0019|
+              U0011,glen@outlook.com,2001-11-01T13:15:33,P0005|
+              U0014,anne@aol.com,2001-11-01T09:15:33,P0018
+
+
+
+
+            </p>
+          </div>
+        </div>
+        <div class="element">
+          <h2 class="title">Log</h2>
+          <form class="inputBox">
+            <textarea type="text" class="logInput" spellcheck="false" placeholder="Enter Log Text"></textarea>
+            
+
+              <button class="enterButton">Enter</button>
+
+          </form>
+      </div>
+      </div>
+
+      <div class="row">
+
+        <div class="element">
+          <h2 class="title">unique set of users using the site</h2>
+          <div class = "output">
+            <p id='unique_User_IDs'>
+            </p>
+          </div>
+        </div>
+
+        <div class="element">
+          <h2 class="title">unique set of page codes users are accessing</h2>
+          <div class = "output">
+            <p id='unique_Page_Codes'>
+            </p>
+          </div>
+        </div>
+
+        <div class="element">
+          <h2 class="title">
+            user email addresses that have accessed at least 2 pages
+          </h2>
+          <div class = "output">
+            <p id='two_Page_Users'>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+       
+
+
+        <div class="element">
+          <h2 class="title">
+            top 10 most visited pages and how often they were accessed
+          </h2>
+          <div class = "output">
+            <p id='top_Ten'>
+            </p>
+          </div>
+        </div>
+   
+
+      <div class="element">
+        <h2 class="title">
+          unique set of users that are using the site before 8am
+        </h2>
+        <div class = "output">
+          <p id='early_Birds'>
+          </p>
+        </div>
+      </div>
+    </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
